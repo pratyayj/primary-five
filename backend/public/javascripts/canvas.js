@@ -4,7 +4,7 @@ var HEX_fac901 = "#fac901";
 var HEX_Oe2721 = "#0e2721";
 var HEX_ffffff = "#ffffff";
 var piet = [HEX_225095, HEX_d4121a, HEX_fac901, HEX_Oe2721, HEX_ffffff];
-var selectedColor = "#ffffff";
+
 var index = 0;
 var canvas;
 
