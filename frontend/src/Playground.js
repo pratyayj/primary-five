@@ -1,10 +1,15 @@
+import './Playground.css';
 import React from 'react'
 import p5 from 'p5'
 
 class Playground extends React.Component {
     constructor(props) {
         super(props)
-        this.p5Ref = React.createRef()
+        this.p5Ref = React.createRef();
+    }
+
+    componentDidMount() {
+        this.myP5 = new p5(this.Playground, this.p5Ref.current)
     }
 
     Playground = (p) => {
@@ -43,17 +48,19 @@ class Playground extends React.Component {
             if (p.keyCode === p.RIGHT_ARROW) {
               p.nextColor();
             }
+            if (p.keyCode === 83) {
+                p.saveCanvas("myCanvas", "jpg");
+            }
             return false;
-          }
-    }
+        }
 
-    componentDidMount() {
-        this.myP5 = new p5(this.Playground, this.p5Ref.current)
     }
 
     render() {
         return (
-            <div ref={this.p5Ref} />
+            <div>
+                <div ref={this.p5Ref} className="Playground"/>
+            </div>
         )
     }
 }
