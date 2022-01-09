@@ -1,12 +1,12 @@
 import React from 'react'
-import './App.css';
+import './Home.css';
 
 
 class Home extends React.Component {
     render() {
         return (
-            <div className="App">
-                <h1>Welcome to my playground, my stage, and my canvas.</h1>
+            <div className="Home">
+                <h1>Welcome to my stage, canvas - my playground.</h1>
             </div>
         );
     }

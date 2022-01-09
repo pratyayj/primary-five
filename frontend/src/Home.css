@@ -1,8 +1,4 @@
-.Canvas {
-    border: 5px solid white;
-}
-
-.BaseDiv {
+.Home {
     text-align: center;
     background-color: #010334;
     display: flex;
@@ -13,3 +9,7 @@
     font-size: calc(5px + 2vmin);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
+
+h1 {
+    color: white;
+}
