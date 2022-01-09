@@ -1,25 +1,26 @@
-import './Playground.css';
+import './Canvas.css';
 import React from 'react'
 import p5 from 'p5'
 
-class Playground extends React.Component {
+class Canvas extends React.Component {
     constructor(props) {
         super(props)
         this.p5Ref = React.createRef();
     }
 
     componentDidMount() {
-        this.myP5 = new p5(this.Playground, this.p5Ref.current)
+        this.myP5 = new p5(this.Canvas, this.p5Ref.current)
     }
 
-    Playground = (p) => {
-        var selectedColor = "#ffffff";
-        var piet = ["#225095", "#d4121a", "#fac901", "#0e2721", "#ffffff"];
+    Canvas = (p) => {
+        var selectedColor = "#225095";
+        var piet = ["#d4121a", "#fac901", "#0e2721", "#225095"];
         var pietIndex = 0;
 
         p.setup = () => {
             p.createCanvas(400,400)
-
+            p.strokeWeight(0);
+            p.background(255);
         }
 
         p.draw = () => {
@@ -37,7 +38,7 @@ class Playground extends React.Component {
 
         p.nextColor = () => {
             selectedColor = piet[pietIndex];
-            if (pietIndex + 1 === 5) {
+            if (pietIndex + 1 === 4) {
                 pietIndex = 0;
             } else {
                 pietIndex++;
@@ -58,11 +59,12 @@ class Playground extends React.Component {
 
     render() {
         return (
-            <div>
-                <div ref={this.p5Ref} className="Playground"/>
+            <div className="BaseDiv">
+                <div ref={this.p5Ref} className="Canvas"/>
+                <p>Click the right arrow to change color on Piet's palette. Click the 's' key to save.</p>
             </div>
         )
     }
 }
 
-export default Playground
+export default Canvas
