@@ -1,0 +1,48 @@
+p {
+  color: white;
+}
+
+.bg-lll {
+  background-color: #1e1266;
+}
+
+.navbar-brand
+{
+  color: white !important;
+  font-family: "SpectralExtraLight" !important;
+  font-weight: 200 !important;
+}
+
+.nav-link
+{
+  color: white !important;
+  font-family: "Spectral" !important;
+}
+
+@font-face {
+  font-family: 'Spectral';
+  src: local('Spectral'), url(./fonts/Spectral-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Spectral';
+  font-weight: 200;
+  src: local('SpectralExtraLight'), url(./fonts/Spectral-ExtraLight.ttf) format('truetype');
+}
+
+/* TODO: update to animate only when clicked
+@media (prefers-reduced-motion: no-preference) {
+  .App-Playground {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+*/
