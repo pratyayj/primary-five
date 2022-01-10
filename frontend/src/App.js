@@ -22,7 +22,9 @@ function App() {
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
               <Nav className="me-auto">
-                <Nav.Link href="/canvas/piet-x-riley">Canvas</Nav.Link>
+                <Nav.Link href="/canvas/piet-x-riley">canvas</Nav.Link>
+                <Nav.Link href="/stage">stage</Nav.Link>
+                <Nav.Link href="/playground">playground</Nav.Link>
               </Nav>
             </Navbar.Collapse>
           </Container>

@@ -9,25 +9,32 @@ p {
 .navbar-brand
 {
   color: white !important;
-  font-family: "SpectralExtraLight" !important;
-  font-weight: 200 !important;
+  font-family: "Comfortaa" !important;
+  font-weight: bold;
 }
 
 .nav-link
 {
   color: white !important;
-  font-family: "Spectral" !important;
+  font-weight: lighter !important;
+  font-family: "Comfortaa" !important;
 }
 
 @font-face {
-  font-family: 'Spectral';
-  src: local('Spectral'), url(./fonts/Spectral-Regular.ttf) format('truetype');
+  font-family: 'Comfortaa';
+  font-weight: bold;
+  src: url(./fonts/Comfortaa-SemiBold.ttf) format('truetype');
 }
 
 @font-face {
-  font-family: 'Spectral';
-  font-weight: 200;
-  src: local('SpectralExtraLight'), url(./fonts/Spectral-ExtraLight.ttf) format('truetype');
+  font-family: 'Comfortaa';
+  font-weight: lighter;
+  src: url(./fonts/Comfortaa-Light.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: 'Comfortaa';
+  src: url(./fonts/Comfortaa-Regular.ttf) format('truetype');
 }
 
 /* TODO: update to animate only when clicked
