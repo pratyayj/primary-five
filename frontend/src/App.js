@@ -1,6 +1,8 @@
 import './App.css';
 import Canvas from './Canvas';
+import InConstruction from './InConstruction';
 import Home from './Home';
+
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
 import Container from 'react-bootstrap/Container';
@@ -33,6 +35,8 @@ function App() {
         <Routes>
           <Route path="/canvas/piet-x-riley" element={<Canvas />} />
           <Route path="/" element={<Home />} />
+          <Route path="/playground" element={<InConstruction />} />
+          <Route path="/stage" element={<InConstruction />} />
         </Routes>
       </div>
     </Router>
