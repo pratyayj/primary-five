@@ -15,6 +15,11 @@ class InConstruction extends React.Component {
             </div>
         );
     }
+
+    componentDidMount(){
+        const navHeight = document.querySelector("nav").offsetHeight
+        document.querySelector(".BaseDiv").style.height =`${window.innerHeight-(navHeight)}px`
+    }
 }
 
 export default InConstruction;

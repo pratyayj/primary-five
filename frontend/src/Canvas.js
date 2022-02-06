@@ -10,6 +10,8 @@ class Canvas extends React.Component {
 
     componentDidMount() {
         this.myP5 = new p5(this.Canvas, this.p5Ref.current)
+        const navHeight = document.querySelector("nav").offsetHeight
+        document.querySelector(".BaseDiv").style.height =`${window.innerHeight-(navHeight)}px`
     }
 
     Canvas = (p) => {

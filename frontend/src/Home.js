@@ -10,6 +10,11 @@ class Home extends React.Component {
             </div>
         );
     }
+
+    componentDidMount(){
+        const navHeight = document.querySelector("nav").offsetHeight
+        document.querySelector(".Home").style.height =`${window.innerHeight-(navHeight)}px`
+    }
 }
 
 export default Home;
