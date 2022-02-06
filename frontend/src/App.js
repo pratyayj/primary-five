@@ -2,6 +2,7 @@ import './App.css';
 import Canvas from './Canvas';
 import InConstruction from './InConstruction';
 import Home from './Home';
+import TechStack from './TechStack';
 
 import Navbar from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav';
@@ -40,7 +41,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/playground" element={<InConstruction />} />
           <Route path="/stage" element={<InConstruction />} />
-          <Route path="/tech-stack" element={<InConstruction />} />
+          <Route path="/tech-stack" element={<TechStack />} />
         </Routes>
       </div>
     </Router>

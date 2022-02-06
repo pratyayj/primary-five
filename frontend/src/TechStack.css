@@ -1,0 +1,23 @@
+.BaseDiv {
+    text-align: center;
+    background-color: #010334;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: calc(5px + 2vmin);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+
+h1, h2 {
+    color: white;
+    font-family: "Comfortaa";
+    font-weight: lighter;
+}
+
+tr, th {
+  color: white;
+  font-size: 14px;
+  font-family: "Comfortaa";
+  font-weight: lighter;
+}
