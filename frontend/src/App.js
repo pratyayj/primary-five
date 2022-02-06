@@ -28,6 +28,9 @@ function App() {
                 <Nav.Link href="/stage">stage</Nav.Link>
                 <Nav.Link href="/playground">playground</Nav.Link>
               </Nav>
+              <Nav className="justify-content-end">
+              <Nav.Link href="/tech-stack">tech stack</Nav.Link>
+              </Nav>
             </Navbar.Collapse>
           </Container>
         </Navbar>
@@ -37,6 +40,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/playground" element={<InConstruction />} />
           <Route path="/stage" element={<InConstruction />} />
+          <Route path="/tech-stack" element={<InConstruction />} />
         </Routes>
       </div>
     </Router>
